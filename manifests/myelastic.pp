@@ -1,3 +1,4 @@
+# my elasticsearch example code.
 class myelastic {
   class { 'elasticsearch':
     java_install => true,
@@ -5,6 +6,6 @@ class myelastic {
     repo_version => '5.x',
   }
 
-  elasticsearch::instance { 'es-01': }
+  elasticsearch::instance { '$hostname-01': }
 
 }
