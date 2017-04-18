@@ -6,6 +6,6 @@ class myelastic {
     repo_version => '5.x',
   }
 
-  elasticsearch::instance { '::$hostname-01': }
+  elasticsearch::instance { '::$fqdn-es-01': }
 
 }
